@@ -1,37 +1,48 @@
-Rafael Leao Portugal SerieA Ac-Milan FW 10 26
-Bukayo Saka England Premier-League Arsenal FW 7 24
-Martin Odegaard Norway Premier-League Arsenal MF 8 27
-Antoine Griezmann France LaLiga Atletico-Madrid FW 7 35
-Jan Oblak Slovenia LaLiga Atletico-Madrid GK 1 33
-Anthony Gordon England LaLiga Barcelona FW 11 25
-Pedri Gonzalez Spain LaLiga Barcelona MF 8 23
-Robert Lewandowski Poland LaLiga Barcelona FW 9 37
-Jeremie Frimpong Netherlands Bundesliga Bayer-Leverkusen DF 30 25
-Harry Kane England Bundesliga Bayern-Munchen FW 9 32
-Jamal Musiala Germany Bundesliga Bayern-Munchen MF 10 23
-Jonathan Tah Germany Bundesliga Bayern-Munchen DF 4 30
-Joshua Kimmich Germany Bundesliga Bayern-Munchen MF 6 31
-Luis Diaz Colombia Bundesliga Bayern-Munchen FW 14 29
-Gregor Kobel Switzerland Bundesliga Borusia-Dortmund GK 1 28
-Julian Brandt Germany Bundesliga Borusia-Dortmund MF 19 30
-Alejandro Garnacho Argentina Premier-League Chelsea FW 49 21
-Cole Palmer England Premier-League Chelsea MF 10 24
-Enzo Fernandez Argentina Premier-League Chelsea MF 8 25
-Lautaro Martinez Argentina SerieA Inter-Milano FW 10 28
-Nicolo Barella Italy SerieA Inter-Milano MF 23 29
-Yann Sommer Switzerland SerieA Inter-Milano GK 1 37
-Alexander Isak Sweden Premier-League Liverpool FW 9 26
-Florian Wirtz Germany Premier-League Liverpool MF 10 23
-Mohamed Salah Egypt Premier-League Liverpool FW 11 33
-Erling Haaland Norway Premier-League Manchester-City FW 9 25
-Gianluigi Donnarumma Italy Premier-League Manchester-City GK 99 27
-Phil Foden England Premier-League Manchester-City FW 47 25
-Bruno Fernandes Portugal Premier-League Manchester-United MF 8 31
-Marcus Rashford England Premier-League Manchester-United FW 10 28
-Khvicha Kvaratskhelia Georgia League1 PSG FW 77 25
-Achraf Hakimi Morocco League1 PSG DF 2 27
-Ousmane Dembele France League1 PSG FW 10 29
-Jude Bellingham England LaLiga Real-Madrid MF 5 22
-Kylian Mbappe France LaLiga Real-Madrid FW 10 27
-Trent Alexander-Arnold England LaLiga Real-Madrid DF 12 27
-Vinicius Junior Brazil LaLiga Real-Madrid FW 7 25
+Florian-Wirtz Germany Bundesliga Bayer-Leverkusen MF 10 23
+Xhaka Switzerland Bundesliga Bayer-Leverkusen MF 34 33
+Jeremie-Frimpong Netherlands Bundesliga Bayer-Leverkusen DF 30 25
+Harry-Kane England Bundesliga Bayern-Munchen FW 9 32
+Jamal-Musiala Germany Bundesliga Bayern-Munchen MF 10 23
+Joshua-Kimmich Germany Bundesliga Bayern-Munchen MF 6 31
+Leroy-Sane Germany Bundesliga Bayern-Munchen FW 10 30
+Gregor-Kobel Switzerland Bundesliga Borusia-Dortmund GK 1 28
+Julian-Brandt Germany Bundesliga Borusia-Dortmund MF 19 30
+Nico-Schlotterbeck Germany Bundesliga Borusia-Dortmund DF 4 26
+Antoine-Griezmann France LaLiga Atletico-Madrid FW 7 35
+Jan-Oblak Slovenia LaLiga Atletico-Madrid GK 1 33
+Marcos-Llorente Spain LaLiga Atletico-Madrid MF 14 31
+Lamine-Yamal Spain LaLiga Barcelona FW 19 18
+Gavi Spain LaLiga Barcelona MF 6 21
+Pedri Spain LaLiga Barcelona MF 8 23
+Robert-Lewandowski Poland LaLiga Barcelona FW 9 37
+Federico-Valverde Uruguay LaLiga Real-Madrid MF 15 27
+Jude-Bellingham England LaLiga Real-Madrid MF 5 23
+Kylian-Mbappe France LaLiga Real-Madrid FW 9 27
+Vinicius-Junior Brazil LaLiga Real-Madrid FW 7 25
+Achraf-Hakimi Morocco League1 PSG DF 2 27
+Bradley-Barcola France League1 PSG FW 29 23
+Ousmane-Dembele France League1 PSG FW 10 29
+Vitinha Portugal League1 PSG MF 17 26
+Bukayo-Saka England Premier-League Arsenal FW 7 24
+Declan-Rice England Premier-League Arsenal MF 4 27
+Martin-Odegaard Norway Premier-League Arsenal MF 8 27
+Cole-Palmer England Premier-League Chelsea MF 20 24
+Enzo-Fernandez Argentina Premier-League Chelsea MF 8 25
+Moises-Caicedo Ecuador Premier-League Chelsea MF 25 24
+Luis-Diaz Colombia Premier-League Liverpool FW 14 29
+Mohamed-Salah Egypt Premier-League Liverpool FW 11 34
+Trent-Alexander-Arnold England Premier-League Liverpool DF 66 27
+Erling-Haaland Norway Premier-League Manchester-City FW 9 25
+Phil-Foden England Premier-League Manchester-City MF 47 26
+Alejandro-Garnacho Argentina Premier-League Manchester-United FW 17 21
+Bruno-Fernandes Portugal Premier-League Manchester-United MF 8 31
+Marcus-Rashford England Premier-League Manchester-United FW 10 28
+Mike-Maignan France SerieA Ac-Milan GK 16 30
+Rafael-Leao Portugal SerieA Ac-Milan FW 10 27
+Theo-Hernandez France SerieA Ac-Milan DF 19 28
+Lautaro-Martinez Argentina SerieA Inter-Milano FW 10 28
+Nicolo-Barella Italy SerieA Inter-Milano MF 23 29
+Yann-Sommer Switzerland SerieA Inter-Milano GK 1 37
+Kevin-De-Bruyne Belgium SerieA Napoli MF 11 34
+Khvicha-Kvaratskhelia Georgia SerieA Napoli FW 77 25
+Stanislav-Lobotka Slovakia SerieA Napoli MF 68 31

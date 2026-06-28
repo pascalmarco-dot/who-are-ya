@@ -28,45 +28,63 @@ const string PURPLE = "\033[35m";
 const string CYAN = "\033[36m";         
 const string ORANGE = "\033[38;5;208m";
 
-int x,k,ok=1,corect,gasit,again=1;
-char incercarenume[50],incercareprenume[50],raspuns;
+int x,k,ok=1,corect,gasit,again=1,vieti;
+char incercarenume[50],incercareprenume[50],raspuns[10];
 int main()
 {
     while(again)
     {
         corect=0;
         srand(time(0));
-        while (f>>tmp.nume>>tmp.prenume>>tmp.tara>>tmp.liga>>tmp.club>>tmp.pozitie>>tmp.nr>>tmp.varsta)
+        while (f>>tmp.nume/*>>tmp.prenume*/>>tmp.tara>>tmp.liga>>tmp.club>>tmp.pozitie>>tmp.nr>>tmp.varsta)
             k++;
         f.close();
         f.clear();
         x=rand()%k;
         f.open("jucatori.txt");
         k=0;
-        while(f>>tgt.nume>>tgt.prenume>>tgt.tara>>tgt.liga>>tgt.club>>tgt.pozitie>>tgt.nr>>tgt.varsta)
+        while(f>>tgt.nume>>/*tgt.prenume>>*/tgt.tara>>tgt.liga>>tgt.club>>tgt.pozitie>>tgt.nr>>tgt.varsta)
         {
             if (k==x)
                 break;
             k++;
         }
         f.close();
+        vieti=5;
         while (corect==0)
         {
-            cout<<CYAN<<"Guess!"<<RESET<<'\n';
-            cin>>incercarenume>>incercareprenume;
-            if (strcmp(incercarenume,"give")==0 && strcmp(incercareprenume,"up")==0)
+            if(vieti==0)
             {
-                cout<<PURPLE<<"Jucatorul era "<<tgt.nume<<" "<<tgt.prenume<<RESET;
+                cout<<ORANGE<<"You lost, the player was "<<tgt.nume/*<<" "<<tgt.prenume*/<<RESET<<'\n';
+                corect =1;
+                cout<<BLUE<<"Try again? (Y/N)"<<RESET;
+                cin>>raspuns;
+                if(strcmp(raspuns,"N")==0)
+                    again=0;
+                else while (strcmp(raspuns,"Y")!=0 && strcmp(raspuns,"N")!=0)
+                {
+                    cout<<BLUE<<"Y or N "<<RESET;
+                    cin>>raspuns;
+                    if (strcmp(raspuns,"N")==0)
+                        again=0;
+                }
+            }
+            else{
+            cout<<CYAN<<"Guess!('-' between names)"<<RESET<<'\n';
+            cin>>incercarenume/*>>incercareprenume*/;
+            if (strcmp(incercarenume,"surrender")==0 /*&& strcmp(incercareprenume,"up")==0*/)
+            {
+                cout<<PURPLE<<"The player was "<<tgt.nume/*<<" "<<tgt.prenume*/<<RESET;
                 return 0;
             }
             f.open("jucatori.txt");
             gasit=0;
-            while (f>>tmp.nume>>tmp.prenume>>tmp.tara>>tmp.liga>>tmp.club>>tmp.pozitie>>tmp.nr>>tmp.varsta)
+            while (f>>tmp.nume/*>>tmp.prenume*/>>tmp.tara>>tmp.liga>>tmp.club>>tmp.pozitie>>tmp.nr>>tmp.varsta)
             {
-                if(strcmp(incercarenume,tmp.nume)==0 && strcmp(incercareprenume,tmp.prenume)==0)
+                if(strcmp(incercarenume,tmp.nume)==0 /*&& strcmp(incercareprenume,tmp.prenume)==0*/)
                 {
                     strcpy(gss.nume,tmp.nume);
-                    strcpy(gss.prenume,tmp.prenume);
+                    //strcpy(gss.prenume,tmp.prenume);
                     strcpy(gss.tara, tmp.tara);
                     strcpy(gss.liga, tmp.liga);
                     strcpy(gss.club, tmp.club);
@@ -79,9 +97,10 @@ int main()
             }
             f.close();
             if (gasit==0)
-                cout<<ORANGE<<"Jucatorul nu este in lista"<<RESET<<'\n';
+                cout<<ORANGE<<"The player is not in the list"<<RESET<<'\n';
             else 
             {
+                vieti--;
                 if (strcmp(gss.tara,tgt.tara)==0)
                     cout<<GREEN<<gss.tara<<RESET<<" ";
                 else cout<<RED<<gss.tara<<RESET<<" ";
@@ -105,32 +124,33 @@ int main()
                 else cout<<RED<<"smaller"<<RESET<<'('<<gss.nr<<") ";
     
                 if (gss.varsta==tgt.varsta)
-                    cout<<GREEN<<gss.varsta<<RESET<<" ";
+                    cout<<GREEN<<gss.varsta<<RESET<<" "<<endl;
                 else if (gss.varsta<tgt.varsta)
-                    cout<<RED<<"older"<<RESET<<'('<<gss.varsta<<") ";
-                else cout<<RED<<"younger"<<RESET<<'('<<gss.varsta<<") ";
+                    cout<<RED<<"older"<<RESET<<'('<<gss.varsta<<")"<<endl;
+                else cout<<RED<<"younger"<<RESET<<'('<<gss.varsta<<")"<<endl;
     
-                if (strcmp(gss.nume,tgt.nume)==0 && strcmp(gss.prenume,tgt.prenume)==0)
+                if (strcmp(gss.nume,tgt.nume)==0 /*&& strcmp(gss.prenume,tgt.prenume)==0*/)
                 {
                     corect = 1;
-                    cout<<PURPLE<<"Felicitari!"<<RESET<<'\n';
+                    cout<<PURPLE<<"Well played!"<<RESET<<'\n';
                 }
                 if (corect==1)
                 {
                     cout<<BLUE<<"Try again? (Y/N)"<<RESET;
                     cin>>raspuns;
-                    if(raspuns=='N')
+                    if(strcmp(raspuns,"N")==0)
                         again=0;
-                    else while (raspuns!='Y' && raspuns!='N')
+                    else while (strcmp(raspuns,"Y")!=0 && strcmp(raspuns,"N")!=0)
                     {
                         cout<<BLUE<<"Y or N "<<RESET;
                         cin>>raspuns;
-                        if (raspuns=='N')
+                        if (strcmp(raspuns,"N")==0)
                             again=0;
                     }
                 }
             }
         }
+    }
     }
     return 0;
 }
